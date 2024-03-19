@@ -38,7 +38,7 @@ body {
 
 .navbar .nav-container a {
   text-decoration: none;
-  color: #0e2431;
+  color: white;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0.7rem;
@@ -151,4 +151,81 @@ body {
 }
 .logo img{
   transition: 0.3s all ease;
+}
+#page1{
+  height: 83vh;
+  width: 100vw;
+  background-image: url(media/background_page_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textLarger2{
+  font-size: 5vh;
+  font-weight: 900;
+  line-height: 5vh;
+
+}
+@media (min-width:870px) {
+  .textLarger1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+}
+@media (max-width:512px) {
+  .textLarger1{
+    font-size: 5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+}
+.textCenter{
+  mix-blend-mode: difference;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.textCenter2{
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textLarger1{
+  font-size: 7vh;
+  font-weight: 900;
+  line-height: 5vh;
+
+}
+@media (min-width:870px) {
+  .textLarger1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+}
+@media (max-width:512px) {
+  .textLarger1{
+    font-size: 5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+}
+.animationFadeIn{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
